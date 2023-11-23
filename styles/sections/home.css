@@ -1,0 +1,78 @@
+#section-home {
+    padding: 53px 20px 0px 20px;
+    height: calc(100vh - 90px);
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home__p {
+    color: var(--text-color);
+    margin: 0px;
+    font-size: 2vw;
+}
+
+.home__h1 {
+    margin: 0px;
+    width: 45vw;
+}
+
+.home__h1__span {
+    background: linear-gradient(270deg, var(--cyan) 0%, var(--blue) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 4.4vw;
+    font-weight: 600;
+}
+
+.home__img {
+    border-radius: 100%;
+    width: 40vw;
+    max-width: 80vh;
+    position: relative;
+    transform: translateX(100vw);
+    opacity: 0;
+    transition: 1s;
+}
+
+.home__img.active {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.home__div--1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 32vh;
+}
+
+.home__div--2 {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home__div--icons {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.home__icon {
+    font-size: 32px;
+    color: var(--clr);
+    margin: 0px 5px;
+}
+
+.home__icon:last-child {
+    margin: 0px 0px 0px 5px;
+}
+
+.home__icon:first-child {
+    margin: 0px 5px 0px 0px;
+}
