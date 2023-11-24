@@ -5,6 +5,7 @@ async function fetchData() {
         if (!response.ok) {
             throw new Error(`Erro ao carregar os dados. Código de status: ${response.status}`);
         }
+        console.log(element.projectName);
         let projectsObj = await response.json();
         let projectsDiv = document.getElementById("projectsDiv")
         projectsObj.forEach(element => {
