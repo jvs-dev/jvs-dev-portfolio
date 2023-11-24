@@ -1,0 +1,16 @@
+#section-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 90vh;
+    justify-content: flex-start;
+}
+
+.projects__projectsDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+    justify-items: center;
+    width: calc(100% - 80px);
+}

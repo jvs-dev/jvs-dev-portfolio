@@ -24,12 +24,15 @@
     <link rel="stylesheet" href="styles/components/buttons/linear-btn.css">
     <link rel="stylesheet" href="styles/components/buttons/see-more.css">
     <link rel="stylesheet" href="styles/components/cards/card-skills.css">
+    <link rel="stylesheet" href="styles/components/cards/card-projects.css">
+    <link rel="stylesheet" href="styles/components/cursor.css">
     <!--sections-->
     <link rel="stylesheet" href="styles/sections/loading.css">
     <link rel="stylesheet" href="styles/sections/menu.css">
     <link rel="stylesheet" href="styles/sections/home.css">
     <link rel="stylesheet" href="styles/sections/about.css">
     <link rel="stylesheet" href="styles/sections/skills.css">
+    <link rel="stylesheet" href="styles/sections/projects.css">
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -92,7 +95,7 @@
             <img class="home__img" src="assets/img/my photo.png" alt="">
         </section>
         <section id="section-about" data-aos="fade-right">
-            <h1 class="title--h1">Sobre mim</h1>
+            <h1 class="title--h1 outlined">Sobre mim</h1>
             <p class="about__p text--p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, deserunt
                 voluptas!
                 Dolorum, pariatur suscipit quis ipsa eius quas beatae ab. Quam nemo facere officia alias vitae minima
@@ -114,7 +117,7 @@
 
 
         <section id="section-skills" data-aos="fade-right">
-            <h1 class="skills__h1 title--h1">Habilidades</h1>
+            <h1 class="skills__h1 title--h1 outlined">Habilidades</h1>
             <div class="skills__div">
                 <article class="skills__article card-skills">
                     <h3 class="card__title">HTML</h3>
@@ -229,6 +232,12 @@
             </div>
         </section>
 
+        <section id="section-projects" data-aos="fade-right">
+            <h1 class="projects__h1 title--h1 outlined">Projetos</h1>
+            <div class="projects__projectsDiv" id="projectsDiv">
+
+            </div>
+        </section>
 
 
 
@@ -239,10 +248,12 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="script/sections/menu.js"></script>
     <script type="module" src="script/sections/home.js"></script>
+    <script type="module" src="script/sections/projects.js"></script>
     <script type="module" src="script/sections/loading.js"></script>
     <script type="module" src="script/components/menutoggle-btn.js"></script>
     <script type="module" src="script/components/darklight-btn.js"></script>
     <script type="module" src="script/components/card-skills.js"></script>
+    <script type="module" src="script/components/cursor.js"></script>
     <script type="module" src="script/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
