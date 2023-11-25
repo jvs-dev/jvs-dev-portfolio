@@ -10,7 +10,7 @@ btns.forEach((btn) =>
         menutoggle_btn.classList.remove("active")
         section_menu.classList.remove("active")
         setTimeout(() => {            
-            body.style.overflow = "hidden"
+            body.style.overflowY = "auto"
             section_menu.style.display = "none"
         }, 500);
     })
@@ -20,7 +20,7 @@ scroll_to_home.onclick = function () {
     menutoggle_btn.classList.remove("active")
     section_menu.classList.remove("active")
     setTimeout(() => {        
-        body.style.overflow = "hidden"
+        body.style.overflowY = "auto"
         section_menu.style.display = "none"        
     }, 500);
 }
