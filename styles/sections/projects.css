@@ -10,7 +10,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    padding: 40px;
+    padding: 80px 40px 40px 40px;
     justify-items: center;
+    align-items: center;
     width: calc(100% - 80px);
 }
