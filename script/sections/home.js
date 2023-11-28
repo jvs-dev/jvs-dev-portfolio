@@ -72,10 +72,14 @@ function write_p_text() {
 
     function animated_cursor() {
         setInterval(() => {
-            if (home_p.innerHTML == `${animated_text}|`) {
-                home_p.innerHTML = `${animated_text} `
+            if (window.innerWidth > 755) {
+                if (home_p.innerHTML == `${animated_text}|`) {
+                    home_p.innerHTML = `${animated_text} `
+                } else {
+                    home_p.innerHTML = `${animated_text}|`
+                }
             } else {
-                home_p.innerHTML = `${animated_text}|`
+                home_p.innerHTML = `${animated_text}`
             }
         }, 500);
     }

@@ -53,6 +53,7 @@
 .home__div--2 {
     margin-top: 20px;
     width: 100%;
+    max-width: 520px;
     display: flex;
     justify-content: space-between;
 }
@@ -75,4 +76,13 @@
 
 .home__icon:first-child {
     margin: 0px 5px 0px 0px;
+}
+
+.home__a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: calc((100% / 2) - 10px);
+    text-decoration: none;
 }

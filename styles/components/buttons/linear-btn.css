@@ -1,18 +1,27 @@
 .linear-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 0px;
     background: linear-gradient(45deg, var(--blue), var(--blue), var(--cyan), var(--blue), var(--blue)) no-repeat;
     cursor: pointer;
     border: 0px;
-    font-size: 16px;
+    font-size: 18px;
+    text-transform: uppercase;
     letter-spacing: 1.5px;
-    padding: 6px 0px;
+    padding: 8px 0px;
     border-radius: 50px;
     color: #fff;
     font-weight: 500;
     background-size: 400% 400%;
     animation: linear-btn-animation 2s linear infinite;
-    width: calc((100% / 2) - 10px);
+    width: 100%;
     transition: 0.2s;
+}
+
+.linear-btn i {
+    font-size: 22px;
+    margin-right: 10px;
 }
 
 .linear-btn:hover {

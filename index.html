@@ -36,6 +36,8 @@
     <link rel="stylesheet" href="styles/sections/skills.css">
     <link rel="stylesheet" href="styles/sections/projects.css">
     <link rel="stylesheet" href="styles/sections/contact.css">
+    <!-- mobileConfig -->
+    <link rel="stylesheet" href="styles/mobileConfig.css">
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -91,13 +93,13 @@
                 <p class="home__p"></p>
                 <div class="home__div--icons"></div>
                 <div class="home__div--2">
-                    <button class="home__button linear-btn">Download CV</button>
-                    <button class="home__button border-btn">Fale comigo</button>
+                    <a href="https://linkedin.com/in/joão-vitor-dev" class="home__a"><button class="home__button linear-btn"><i class="bi bi-linkedin"></i>linkedin</button></a>
+                    <a href="https://w.app/0byIVJ" class="home__a"><button class="home__button border-btn">Fale comigo</button></a>
                 </div>
             </div>
             <img class="home__img" src="assets/img/my photo.png" alt="">
         </section>
-        <section id="section-about" data-aos="fade-right">
+        <section id="section-about" data-aos="fade-left">
             <h1 class="title--h1 outlined">Sobre mim</h1>
             <p class="about__p text--p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, deserunt
                 voluptas!
@@ -244,14 +246,14 @@
         <section id="section-contact" data-aos="fade-right">
             <h1 class="contact__h1 title--h1 outlined">Entre em contato</h1>
             <div class="contact__div">
-                <a href="" class="contact__contactCard__a">
+                <a href="https://linkedin.com/in/joão-vitor-dev" class="contact__contactCard__a">
                     <article class="contact__contactCard">
                         <i class="bi bi-linkedin contactCard__icon"></i>
                         <p class="contactCard__p">linkedin</p>
                         <p class="contactCard__description">linkedin.com/in/joão-vitor-dev</p>
                     </article>
                 </a>
-                <a href="" class="contact__contactCard__a">
+                <a href="https://github.com/jvs-dev" class="contact__contactCard__a">
                     <article class="contact__contactCard">
                         <i class="bi bi-github contactCard__icon"></i>
                         <p class="contactCard__p">Github</p>
@@ -265,7 +267,7 @@
                         <p class="contactCard__description">jvssilv4@gmail.com</p>
                     </article>
                 </a>
-                <a href="" class="contact__contactCard__a">
+                <a href="https://w.app/0byIVJ" class="contact__contactCard__a">
                     <article class="contact__contactCard">
                         <i class="bi bi-telephone contactCard__icon"></i>
                         <p class="contactCard__p">Telefone</p>
@@ -281,11 +283,11 @@
                 <p class="footer__p">jvs-dev</p>
             </div>
             <nav class="footer__nav">
-                <a href="" class="footer__a">Inicio</a>
-                <a href="" class="footer__a">Sobre mim</a>
-                <a href="" class="footer__a">Habilidades</a>
-                <a href="" class="footer__a">Projetos</a>
-                <a href="" class="footer__a">Contato</a>
+                <a href="#section-home" class="footer__a">Inicio</a>
+                <a href="#section-about" class="footer__a">Sobre mim</a>
+                <a href="#section-skills" class="footer__a">Habilidades</a>
+                <a href="#section-projects" class="footer__a">Projetos</a>
+                <a href="#section-contact" class="footer__a">Contato</a>
             </nav>
         </footer>
 

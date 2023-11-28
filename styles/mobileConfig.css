@@ -1,0 +1,158 @@
+@media (max-width: 755px) {
+    #main {
+        overflow-x: hidden;
+    }
+
+    #section-home {
+        flex-direction: column-reverse;
+        padding: 0px 20px;
+        height: auto;
+        min-height: 100vh;
+        justify-content: center;
+    }
+
+    .home__img.active {
+        width: 100%;
+    }
+
+    .home__div--2 {
+        flex-direction: column;
+        gap: 15px 0px;
+    }
+
+    .home__a {
+        width: 100%;
+    }
+
+    .home__div--1 {
+        width: 100%;
+        align-items: center;
+    }
+
+    .home__h1.title--h1 {
+        text-align: center;
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .home__h1__span {
+        font-size: 45px;
+    }
+
+    .home__p {
+        font-size: 22px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .title--h1 {
+        font-size: 32px;
+    }
+
+    .about__p {
+        font-size: 20px;
+        width: 100%;
+        padding: 0px 20px;
+        max-height: 8.8em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .card-skills {
+        width: calc(50vw - 40px);
+        height: calc(50vw - 40px);
+    }
+
+    .card__title {
+        font-size: 20px;
+    }
+
+    .card__icon {
+        font-size: 50px;
+    }
+
+    .skills__div {
+        padding: 60px 20px 80px 20px;
+        justify-content: center;
+    }
+
+    .projects__projectsDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 50px 20px 80px 20px;
+    }
+
+    .projectCard__div--2 {
+        padding: 10px;
+    }
+
+    .projectCard__btn {
+        font-size: 16px;
+        padding: 6px 20px;
+    }
+
+    .projectCard__p {
+        font-size: 22px;
+        letter-spacing: 1px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 50%;
+    }
+
+    .contact__div {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px;
+        margin-top: 40px;
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .contact__contactCard__a {
+        margin: 20px 0px;
+        max-width: 80%;
+    }
+
+    .main__footer {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 20px 20px 40px 20px;
+    }
+
+    .footer__nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 10px 0px;
+        margin-bottom: 20px;
+    }
+
+    .footer__line {
+        width: calc(100% - 40px);
+    }
+
+    .footer__div {
+        opacity: 0.5;
+    }
+
+    .header__logo {
+        height: 35px;
+    }
+
+    .header__div--1 {
+        padding: 15px 20px;
+    }
+
+    #menutoggle-btn::before {
+        transform: translateY(-6px);
+    }
+
+    #menutoggle-btn::after {
+        box-shadow: 0px 10px 0px var(--blue);
+    }
+}
