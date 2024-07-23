@@ -56,6 +56,7 @@
     max-width: 520px;
     display: flex;
     justify-content: space-between;
+    animation: showDiv 4s linear;
 }
 
 .home__div--icons {
@@ -85,4 +86,13 @@
     color: #fff;
     width: calc((100% / 2) - 10px);
     text-decoration: none;
+}
+
+@keyframes showDiv {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

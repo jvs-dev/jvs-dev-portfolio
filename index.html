@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="styles/sections/projects.css">
     <link rel="stylesheet" href="styles/sections/contact.css">
     <link rel="stylesheet" href="styles/sections/maintenance.css">
+    <link rel="stylesheet" href="styles/sections/view-project.css">
     <!-- mobileConfig -->
     <link rel="stylesheet" href="styles/mobileConfig.css">
     <!--fonts-->
@@ -60,16 +61,49 @@
             <span class="loading__span">Loading...</span>
         </div>
     </section>
-    <section id="maintenance">
+    <section id="view-project">
+        <div class="view-project__div--1">
+            <div class="view-project__div--2">
+                <video class="view-project__video" id="viewProjectVideo" src="" controls></video>
+                <div class="view-project__div--3">
+                    <div class="view-project__buttonDiv"><button class="view-project__button"><ion-icon
+                                name="star"></ion-icon></button>10</div>
+                    <div class="view-project__buttonDiv"><button class="view-project__button"><i
+                                class="bi bi-chat-left-fill"></i></button>5</div>
+                    <div class="view-project__buttonDiv"><button class="view-project__button button-share"><ion-icon
+                                name="share-social"></ion-icon></button></div>
+                </div>
+            </div>
+            <div class="view-project__div--4">
+                <div class="view-project__div--5">
+                    <h1 class="view-project__title" id="viewProjectTitle">Titulo do Projeto</h1>
+                    <button class="view-project__close" type="button" id="closeViewProject"><ion-icon name="close-outline"></ion-icon></button>
+                </div>
+                <p class="view-project__p">Este projeto foi desenvolvido usando as seguintes tecnologias:</p>
+                <ul class="view-project__ul">
+                    <li class="view-project__li">HTML5;</li>
+                    <li class="view-project__li">CSS3;</li>
+                    <li class="view-project__li">JavaScript;</li>
+                    <li class="view-project__li">EJS;</li>
+                    <li class="view-project__li">Firebase API;</li>
+                </ul>
+                <div class="view-project__div--6">
+                    <a href="#" class="view-project__linearBtn" target="_blank" id="viewProjectLink">Acessar projeto</a>
+                    <a href="#" class="view-project__borderBtn" target="_blank" id="viewProjectRepoLink">Acessar repositório</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section id="maintenance">
         <h1 class="maintenance__h1">Site em <span>manutenção</span></h1>
         <lord-icon class="maintenance__icon" src="https://cdn.lordicon.com/jdalicnn.json" trigger="loop" delay="1000"
             colors="primary:#ffffff,secondary:#0e64e4" style="width:200px;height:200px">
         </lord-icon>
-    </section>
+    </section> -->
     <section id="section-menu">
         <nav class="menu__nav">
             <a class="menu__nav__a" href="#section-home" id="scroll-to-home">Inicio</a>
-            <a href="#section-about" class="menu__nav__a">Sobre mim</a>
+            <a href="#section-about" id="goToAbout" class="menu__nav__a">Sobre mim</a>
             <a href="#section-skills" class="menu__nav__a">Habilidades</a>
             <div class="dropdown">
                 <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"

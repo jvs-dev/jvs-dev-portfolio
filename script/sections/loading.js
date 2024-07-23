@@ -7,6 +7,10 @@ function site_loaded() {
         setTimeout(() => {
             section_loading.style.display = "none"
             body.style.overflowY = "auto"
+            window.scroll({
+                top: 80,
+                left: 0,                
+            });
         }, 500);
     }, 500);
 }

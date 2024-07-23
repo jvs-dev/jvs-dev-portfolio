@@ -8,7 +8,7 @@
     border-radius: 10px;
     background: var(--bg-cards);
     box-shadow: 12px 12px 4px 0px rgba(0, 0, 0, 0.50);
-    width: 100%;    
+    width: 100%;
     aspect-ratio: 2/1;
     overflow: hidden;
     position: relative;
@@ -16,30 +16,55 @@
 
 .projectCard__div--2 {
     border-radius: 0px 0px 10px 10px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+    background: #1e1e1e83;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 10px 20px;
+    padding: 12px 20px;
     position: absolute;
     bottom: 0;
+    transition: 0.2s;
 }
+
+.projectCard__div--2::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(-270deg, #0ECAE4 0%, #0E64E4 100%);
+    transition: 0.3s;
+}
+
+.projectCard:hover .projectCard__div--2 {
+    background: var(--bg-cards);
+}
+
+.projectCard:hover .projectCard__div--2::before {
+    content: '';
+    width: 100%;
+}
+
 .projectCard__btn {
+    font-size: 14px;
     border: 0px;
     outline-width: 0px;
     color: var(--white);
-    background: var(--blue);
-    border-radius: 8px;
-    padding: 6px 22px;
+    background: linear-gradient(-270deg, #0ECAE4 0%, #0E64E4 100%);
+    border-radius: 100px;
+    padding: 4px 18px;
 }
+
 .projectCard__p {
     color: var(--white);
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 18px;
     letter-spacing: 1.2px;
 }
+
 .projectCard__div--1 {
     height: 100%;
     width: 100%;
@@ -48,6 +73,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .projectCard__img {
     height: 102%;
 }
