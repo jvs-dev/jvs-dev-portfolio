@@ -19,6 +19,7 @@ const storage = getStorage();
 const body = document.querySelector("body")
 const viewProject = document.getElementById("view-project")
 const viewProjectTitle = document.getElementById("viewProjectTitle")
+const topViewProjectTitle = document.getElementById("topViewProjectTitle")
 const closeViewProject = document.getElementById("closeViewProject")
 const viewProjectVideo = document.getElementById("viewProjectVideo")
 const viewProjectLink = document.getElementById("viewProjectLink")
@@ -74,6 +75,7 @@ function loadViewProject(name, webLink, repoLink, id, inDevelop) {
                 inDevelopment.classList.remove("active")
             }
             viewProjectTitle.textContent = `${name}`
+            topViewProjectTitle.textContent = `${name}`
             viewProjectVideo.src = `${url}`
             viewProjectLink.href = `${webLink}`
             viewProjectRepoLink.href = `${repoLink}`
@@ -91,6 +93,7 @@ function loadViewProject(name, webLink, repoLink, id, inDevelop) {
         })
         .catch((error) => {
             viewProjectTitle.textContent = `${name}`
+            topViewProjectTitle.textContent = `${name}`
             viewProjectLink.href = `${webLink}`
             viewProjectRepoLink.href = `${repoLink}`
             viewProject.style.transition = "0.5s"

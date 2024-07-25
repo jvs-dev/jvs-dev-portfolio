@@ -170,7 +170,7 @@
         flex-direction: column;
         width: 100vw;
         height: 100vh;
-        padding: 80px 20px 80px 20px;
+        padding: 80px 20px 40px 20px;
         overflow: auto;
     }
 
@@ -186,6 +186,7 @@
 
     .view-project__div--3 {
         justify-content: center;
+        margin: 15px 0px 5px 0px;
     }
 
     .view-project__close {
@@ -194,13 +195,34 @@
         top: 20px;
     }
 
-    .view-project__div--5 {
-        justify-content: center;
-        margin: 20px 0px;
+    .view-project__title {
+        display: none;
     }
 
     .view-project__inDevelopment.active {
         top: 20px;
         transform: translateY(0%);
+    }
+
+    .view-project__title.mobile {
+        display: unset;
+        margin: 0px 0px 25px 0px;
+        text-align: center;
+        align-self: center;
+    }
+
+    .view-project__button {
+        height: 25px;
+        width: 25px;
+    }
+
+    .view-project__button ion-icon {
+        font-size: 15px;
+    }
+
+    .view-project__button i {
+        height: 19px;
+        width: 18px;
+        padding: 0px;
     }
 }
