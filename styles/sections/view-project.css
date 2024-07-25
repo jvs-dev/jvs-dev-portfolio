@@ -21,6 +21,25 @@
     align-items: flex-start;
     justify-content: space-between;
     padding: 20px 20px 30px 20px;
+    position: relative;
+}
+
+.view-project__inDevelopment {
+    display: none;
+}
+
+.view-project__inDevelopment.active {
+    display: unset;
+    position: absolute;
+    background: #ce0505c4;
+    color: var(--white);
+    font-weight: 500;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 14px;    
+    top: 10px;
+    transform: translateY(-100%);
+    backdrop-filter: blur(2px);
 }
 
 .view-project__div--2 {

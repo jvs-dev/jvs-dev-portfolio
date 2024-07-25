@@ -16,13 +16,14 @@ const analytics = getAnalytics(app);
 const db = getFirestore(app);
 const storage = getStorage();
 
-const apiUrl = "https://raw.githubusercontent.com/jvs-dev/projectsAPI/main/db.json";
+const body = document.querySelector("body")
 const viewProject = document.getElementById("view-project")
 const viewProjectTitle = document.getElementById("viewProjectTitle")
 const closeViewProject = document.getElementById("closeViewProject")
 const viewProjectVideo = document.getElementById("viewProjectVideo")
 const viewProjectLink = document.getElementById("viewProjectLink")
 const viewProjectRepoLink = document.getElementById("viewProjectRepoLink")
+const inDevelopment = document.getElementById("inDevelopment")
 async function fetchData() {
     let projectsDiv = document.getElementById("projectsDiv")
     let querySnapshot = await getDocs(collection(db, "projects"));
@@ -51,13 +52,13 @@ async function fetchData() {
                 seeMore.classList.add("projectCard__btn")
                 seeMore.textContent = "Ver mais"
                 seeMore.onclick = function () {
-                    loadViewProject(doc.data().name, doc.data().webLink, doc.data().repoLink, doc.id)
+                    loadViewProject(doc.data().name, doc.data().webLink, doc.data().repoLink, doc.id, doc.data().inDevelop)
                 }
             })
     });
 }
 
-function loadViewProject(name, webLink, repoLink, id) {
+function loadViewProject(name, webLink, repoLink, id, inDevelop) {
     getDownloadURL(ref(storage, `projects/${id}/video.mp4`))
         .then((url) => {
             const xhr = new XMLHttpRequest();
@@ -67,6 +68,11 @@ function loadViewProject(name, webLink, repoLink, id) {
             };
             xhr.open('GET', url);
             xhr.send();
+            if (inDevelop == true) {
+                inDevelopment.classList.add("active")
+            } else {
+                inDevelopment.classList.remove("active")
+            }
             viewProjectTitle.textContent = `${name}`
             viewProjectVideo.src = `${url}`
             viewProjectLink.href = `${webLink}`
@@ -74,6 +80,7 @@ function loadViewProject(name, webLink, repoLink, id) {
             viewProject.style.transition = "0.5s"
             viewProject.style.opacity = "0"
             viewProject.style.display = "flex"
+            body.style.overflow = "hidden"
             setTimeout(() => {
                 viewProject.style.opacity = "1"
             }, 1);
