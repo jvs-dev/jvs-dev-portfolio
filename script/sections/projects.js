@@ -118,7 +118,7 @@ closeViewProject.onclick = function () {
         viewProject.style.display = ""
         viewProject.style.opacity = ""
         viewProject.style.transition = ""
-        body.style.overflow = ""
+        body.style.overflow = "auto"
     }, 500);
 }
 
